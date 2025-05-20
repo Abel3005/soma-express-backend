@@ -28,7 +28,7 @@ app.post('/messages', async (req, res) => {
   }
   try{
     const data = await Message.find({chatroom});
-    res.json(data);s
+    res.json(data);
   }
   catch(err){
     console.error("MongoDB Query Error:",err);
